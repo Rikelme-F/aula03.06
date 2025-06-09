@@ -9,11 +9,12 @@ const server = http.createServer((req, res) => {
             return;
         }
         res.statusCode = 200;
-        res.setHeader("Content-type", "text/html");
+        res.setHeader("Content-Type", "text/html");
         res.write(data);
         res.end();
     });
 });
 server.listen(port, () => {
-    console.log(`Servidor rodando na porta: ${port}`);
+  console.log(`Servidor rodando na porta: ${port}`);
 });
+
